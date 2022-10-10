@@ -1,0 +1,19 @@
+<div>
+    <div>
+        voici les categories
+    </div>
+    <div *ngFor="let item of items">
+        {{item.num}}
+        <pet-category-item></pet-category-item>
+    </div> 
+    <div>
+        <button (click)="switch()"> switch</button>
+        {{on}}
+    </div>
+    <div *ngIf="on"> 
+        ON
+    </div>
+    <div *ngIf="!on">
+        OFF
+    </div>  
+</div>
